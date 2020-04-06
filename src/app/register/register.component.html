@@ -1,0 +1,22 @@
+
+<h1> Registration Page </h1>
+
+<form [formGroup]="person" (onSubmit)="saverec()">
+
+    <input type=text matInput [formControl]="username"> <br>
+ <span> {{checkusername() }} </span>
+
+ 
+ <input type=text matInput [formControl]="password"> <br>
+<span> {{checkpassword()}} </span>
+
+<br>
+
+<button type="submit">Register </button>
+<br>
+
+<h1> Welcome {{username.value}} </h1>
+
+</form>
+
+
